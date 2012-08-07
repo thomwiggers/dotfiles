@@ -7,9 +7,9 @@ fi
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-fpath=($ZSH/zsh/functions $fpath)
+fpath=($DotZSH/zsh/functions $fpath)
 
-autoload -U $ZSH/zsh/functions/*(:t)
+autoload -U $DotZSH/zsh/functions/*(:t)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
