@@ -2,14 +2,13 @@
 # Usage: gitio URL [CODE]
 #
 # Turns a github.com URL
-#  into a git.io URL
-#
-# Created by @defunkt:
-#  https://gist.github.com/1209316 
+# into a git.io URL
 #
 # Copies the git.io URL to your clipboard.
+#
+# https://gist.github.com/1844374 
 
-url  = ARGV[0]
+url = ARGV[0]
 code = ARGV[1]
 
 if url !~ /^(https?:\/\/)?(gist\.)?github.com/
@@ -27,7 +26,7 @@ end
 output = `curl -i http://git.io -F 'url=#{url}' #{code} 2> /dev/null`
 if output =~ /Location: (.+)\n?/
   puts $1
-  `echo #$1 | pbcopy`
+  `echo #$1 | pbcopy 2>/dev/null`
 else
   puts output
 end

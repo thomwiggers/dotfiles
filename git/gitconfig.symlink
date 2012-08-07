@@ -5,12 +5,23 @@
 [hub]
         protocol = https
 [user]
-        name = Zach Holman
-        email = zach@zachholman.com
-[credential]
-        helper = osxkeychain
+        name = Thom Wiggers
+        email = ret@rded.nl
 [alias]
+        br = branch
+        ci = commit
         co = checkout
+        df = diff
+        g = grep -I
+        lg = log -p
+        pb = publish-branch
+        pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
+        smp = submodule -q foreach git pull -q origin master
+        rb = rbranch
+        rc = rank-contributors
+        rv = review
+        sm = show-merges
+        st = status   
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
@@ -19,15 +30,36 @@
         diff = auto
         status = auto
         branch = auto
-        ui = true
+        ui = auto
+[color "branch"]
+		current = yellow reverse
+		local = yellow
+		remote = green
+[color "diff"]
+		meta = yellow bold
+		frag = magenta bold
+		old = red bold
+		new = green bold
+[color "status"]
+		added = yellow
+		changed = green
+		untracked = cyan		
 [core]
         excludesfile = ~/.gitignore
+		attributesfile = ~/.gitattributes
         editor = vim
+		eol = lf
+		autocrlf = input
 [apply]
-        whitespace = nowarn
+        whitespace = fix
+[merge]
+		true
 [mergetool]
         keepBackup = false
-[difftool]
-        prompt = false
+[rerere]
+		#log fixed conflicts
+		enabled = true
 [help]
         autocorrect = 1
+[diff "exif"]
+  textconv = exiftool

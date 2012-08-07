@@ -1,8 +1,8 @@
 [submodule "todo.txt/todo.txt-cli"]
 	path = todo.txt/todo.txt-cli
 	url = https://github.com/ginatrapani/todo.txt-cli.git
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
+[submodule "zsh/oh-my-zsh.symlink"]
+	path = zsh/oh-my-zsh.symlink
 	url = git://github.com/sjl/oh-my-zsh.git
 [submodule "vim/vim.symlink/bundle/stylus.vim"]
 	path = vim/vim.symlink/bundle/stylus.vim
@@ -25,9 +25,6 @@
 [submodule "vim/vim.symlink/bundle/jade.vim"]
 	path = vim/vim.symlink/bundle/jade.vim
 	url = git://github.com/vim-scripts/jade.vim.git
-[submodule ".rbenv"]
-	path = .rbenv
-	url = git://github.com/sstephenson/rbenv.git
 [submodule "vim/vim.symlink/bundle/rainbow_parenthesis.vim"]
 	path = vim/vim.symlink/bundle/rainbow_parenthesis.vim
 	url = git://github.com/kien/rainbow_parentheses.vim.git
@@ -46,8 +43,8 @@
 [submodule "vim/vim.symlink/bundle/fish.vim"]
 	path = vim/vim.symlink/bundle/fish.vim
 	url = git://github.com/vim-scripts/fish.vim.git
-[submodule "vim/vim.symlink/bundle/javascript.vim"]
-	path = vim/vim.symlink/bundle/javascript.vim
+[submodule "vim/vim.symlink/bundle/javascript.vimndle/javascript.vim"]
+	path = vim/vim.symlink/bundle/javascript.vimndle/javascript.vim
 	url = git://github.com/pangloss/vim-javascript.git
 [submodule "vim/vim.symlink/bundle/slim.vim"]
 	path = vim/vim.symlink/bundle/slim.vim
@@ -76,3 +73,9 @@
 [submodule "vim/vim.symlink/bundle/ack.vim"]
 	path = vim/vim.symlink/bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
+[submodule "vim/vim.symlink/bundle/vim-colors-solarized.vim"]
+	path = vim/vim.symlink/bundle/vim-colors-solarized.vim
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/vim.symlink/bundle/pathogen.vim"]
+	path = vim/vim.symlink/bundle/pathogen.vim
+	url = git://github.com/tpope/vim-pathogen.git
