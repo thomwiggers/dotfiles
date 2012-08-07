@@ -44,10 +44,10 @@ task :install do
   puts "Please enter your name (git config --global user.name): "
   STDOUT.flush
   username = gets
-  `git config --global user.name #{username}`
+  `git config --global user.name "#{username.strip}"`
   puts "Please enter your email address (git config --global user.email):"
   email = gets
-  `git config --global user.email #{email}`
+  `git config --global user.email "#{email.strip}"`
 end
 
 task :uninstall do
