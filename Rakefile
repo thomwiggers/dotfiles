@@ -29,7 +29,7 @@ task :install do
       end
       FileUtils.rm_rf(target) if overwrite || overwrite_all
 	  if backup || backup_all
-		`mkdir -p .dotbackup`
+		`mkdir -p $HOME/.dotbackup`
 		`mv "$HOME/.#{file}" "$HOME/.dotbackup/#{file}.backup"`
       end		
     end
