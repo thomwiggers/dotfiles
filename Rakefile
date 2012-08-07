@@ -30,7 +30,8 @@ task :install do
       FileUtils.rm_rf(target) if overwrite || overwrite_all
 	  if backup || backup_all
 		mkdir -p .dotbackup
-		`mv "$HOME/.#{file}" "$HOME/.dotbackup/#{file}.backup"` 
+		`mv "$HOME/.#{file}" "$HOME/.dotbackup/#{file}.backup"`
+      end		
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
