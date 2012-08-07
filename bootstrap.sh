@@ -69,10 +69,9 @@ else
   # --- Install --- #
   notice "Installing"
   cd ~/.dotfiles
-  rake install
 fi
 
 # --- Finished --- #
 cd $current_pwd
-notice "Done"
+notice "Done. Now run ~/.dotfiles/rake install"
 
