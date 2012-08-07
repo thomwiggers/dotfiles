@@ -1,6 +1,6 @@
 # todo.sh: https://github.com/ginatrapani/todo.txt-cli
 
-alias todo.sh=`dirname $0`/todo.txt-cli/todo.sh
+alias todo.sh="`dirname $0`/todo.txt-cli/todo.sh -d `dirname $0`/todo.cfg"
 
 function t() { 
   if [ $# -eq 0 ]; then
