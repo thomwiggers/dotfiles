@@ -34,6 +34,15 @@ task :install do
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
+
+  puts "Setting up git:"
+  puts "Please enter your name (git config --global user.name): "
+  STDOUT.flush
+  username = gets
+  `git config --global user.name #{username}`
+  puts "Please enter your email address (git config --global user.email):"
+  email = gets
+  `git config --global user.email #{email}`
 end
 
 task :uninstall do
