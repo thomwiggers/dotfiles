@@ -30,6 +30,10 @@ task :install do
       FileUtils.rm_rf(target) if overwrite || overwrite_all
 	  if backup || backup_all
 		`mkdir -p $HOME/.dotbackup`
+		if File.directory?(target)
+		  `mv "#{target}" "$HOME/.dotbackup/"
+		  next
+		end
 		`mv "$HOME/.#{file}" "$HOME/.dotbackup/#{file}.backup"`
       end		
     end
