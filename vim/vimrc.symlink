@@ -1,4 +1,4 @@
-" Make vim more useful
+ï»¿" Make vim more useful
 " duh
 set nocompatible
 
@@ -113,7 +113,7 @@ noremap <leader>W :w !sudo tee %<CR>
 command W w
 
 " Toggle show tabs and trailing spaces (,c)
-set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:â€º\ ,trail:Â·,eol:Â¬,nbsp:_
 set fcs=fold:-
 nnoremap <silent> <leader>c :set nolist!<CR>
 
