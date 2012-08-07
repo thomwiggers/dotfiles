@@ -154,7 +154,7 @@ autocmd BufReadPost *
   \ endif
   
 " Emulate bundles, allow plugins to live independantly. Easier to manage.
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+runtime bundle/pathogen.vim/autoload/pathogen.vim
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
