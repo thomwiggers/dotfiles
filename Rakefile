@@ -31,7 +31,7 @@ task :install do
 	  if backup || backup_all
 		`mkdir -p $HOME/.dotbackup`
 		if File.directory?(target)
-		  `mv "#{target}" "$HOME/.dotbackup/"
+		  `mv "#{target}" "$HOME/.dotbackup/"`
 		  next
 		end
 		`mv "$HOME/.#{file}" "$HOME/.dotbackup/#{file}.backup"`
