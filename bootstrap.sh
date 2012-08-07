@@ -59,16 +59,10 @@ if [ -d ~/.dotfiles ]; then
   git submodule update
   git submodule foreach -q git pull -q origin master 
   # --- Install --- #
-  notice "Installing"
-  rake install
 else
   # --- Clone Repo --- #
   notice "Downloading"
   git clone --recursive git://github.com/thomwiggers/dotfiles.git ~/.dotfiles
-
-  # --- Install --- #
-  notice "Installing"
-  cd ~/.dotfiles
 fi
 
 # --- Finished --- #
