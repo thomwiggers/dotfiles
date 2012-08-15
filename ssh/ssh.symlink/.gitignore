@@ -1,3 +1,0 @@
-* #ignore everything
-!config #except config
-!.gitignore #convenient
