@@ -1,9 +1,6 @@
 [submodule "todo.txt/todo.txt-cli"]
 	path = todo.txt/todo.txt-cli
 	url = https://github.com/ginatrapani/todo.txt-cli.git
-[submodule "zsh/oh-my-zsh.symlink"]
-	path = zsh/oh-my-zsh.symlink
-	url = git://github.com/sjl/oh-my-zsh.git
 [submodule "vim/vim.symlink/bundle/stylus.vim"]
 	path = vim/vim.symlink/bundle/stylus.vim
 	url = git://github.com/wavded/vim-stylus.git
