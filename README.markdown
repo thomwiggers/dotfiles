@@ -18,7 +18,7 @@ on [Solarized](http://ethanschoonover.com/solarized), and on those by
 Run this:
 
 ```sh
-git clone https://github.com/thomwigg/dotfiles.git ~/.dotfiles
+git clone https://github.com/thomwiggers/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 rake
 ```
