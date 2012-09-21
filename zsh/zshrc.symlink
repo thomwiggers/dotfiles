@@ -47,7 +47,7 @@ export ZSH_THEME="gentoo"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse extract)
-plugins=(git command-not-found deb debian mvn screen)
+plugins=(git rbenv ruby deb debian mvn screen)
 
 source $ZSH/oh-my-zsh.sh
 
