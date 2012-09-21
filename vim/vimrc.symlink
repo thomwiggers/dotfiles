@@ -262,3 +262,8 @@ else
 endif
 " toggle the background between dark and light
 call togglebg#map("<F5>")
+
+" ------------------------------------
+"  Vim Latex 
+" -----------------------------------
+let g:Tex_DefaultTargetFormat = "pdf"
