@@ -27,7 +27,7 @@ xftalpha 0.8
 
 # Print everything to stdout?
 # out_to_console no
-
+ 
 # MPD host/port
 # mpd_host localhost
 # mpd_port 6600
@@ -65,7 +65,7 @@ own_window_hints undecorated,sticky,skip_pager,below,skip_taskbar
 double_buffer yes
 
 # Minimum size of text area
-minimum_size 280 5
+minimum_size 280 70
 
 # Size of the standard text buffer (default is 128 bytes).
 text_buffer_size 1024
@@ -157,3 +157,8 @@ show_graph_range no
 TEXT
 ${alignc}${color}${font 15}TODO.TXT - ${execi 10 ~/.dotfiles/todo.txt/todo.txt-cli/todo.sh -d ~/.dotfiles/todo.txt/conky.cfg -p ls | head --lines=-2 | wc -l}
 ${execpi 10 ~/.dotfiles/todo.txt/color_todo.sh}
+
+
+
+
+
