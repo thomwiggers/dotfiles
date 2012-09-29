@@ -88,3 +88,6 @@
 [submodule "vim/vim.symlink/bundle/haskell.vim"]
 	path = vim/vim.symlink/bundle/haskell.vim
 	url = git://github.com/wlangstroth/vim-haskell.git
+[submodule "vim/vim.symlink/bundle/pastebin.vim"]
+	path = vim/vim.symlink/bundle/pastebin.vim
+	url = git://github.com/mattn/pastebin-vim.git

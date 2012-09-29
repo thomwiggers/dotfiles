@@ -5,8 +5,10 @@
 [hub]
         protocol = https
 [user]
-        name = Thom Wiggers
-        email = ret@rded.nl
+	name = DD
+	email = thom@thomwiggers.nl
+	name = Thom
+	signingkey = 52AE9CEE
 [alias]
         br = branch
         ci = commit
@@ -63,3 +65,5 @@
         autocorrect = 1
 [diff "exif"]
   textconv = exiftool
+[github]
+	user = thomwiggers

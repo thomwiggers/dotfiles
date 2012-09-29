@@ -263,7 +263,12 @@ endif
 " toggle the background between dark and light
 call togglebg#map("<F5>")
 
-" ------------------------------------
+" -----------------------------------
 "  Vim Latex 
 " -----------------------------------
 let g:Tex_DefaultTargetFormat = "pdf"
+
+" -----------------------------------
+" pastebin
+" -----------------------------------
+let g:pastebin_api_dev_key = "8f0cbc6cf0dd0c11d39e13ab896809cb"
