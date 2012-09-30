@@ -40,9 +40,6 @@
 [submodule "vim/vim.symlink/bundle/fish.vim"]
 	path = vim/vim.symlink/bundle/fish.vim
 	url = git://github.com/vim-scripts/fish.vim.git
-[submodule "vim/vim.symlink/bundle/javascript.vim"]
-	path = vim/vim.symlink/bundle/javascript.vim
-	url = git://github.com/pangloss/vim-javascript.git
 [submodule "vim/vim.symlink/bundle/slim.vim"]
 	path = vim/vim.symlink/bundle/slim.vim
 	url = git://github.com/bbommarito/vim-slim.git
@@ -91,3 +88,6 @@
 [submodule "vim/vim.symlink/bundle/pastebin.vim"]
 	path = vim/vim.symlink/bundle/pastebin.vim
 	url = git://github.com/mattn/pastebin-vim.git
+[submodule "vim/vim.symlink/bundle/javascript.vim"]
+	path = vim/vim.symlink/bundle/javascript.vim
+	url = git://github.com/pangloss/vim-javascript.git
