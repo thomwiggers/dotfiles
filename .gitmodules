@@ -40,8 +40,8 @@
 [submodule "vim/vim.symlink/bundle/fish.vim"]
 	path = vim/vim.symlink/bundle/fish.vim
 	url = git://github.com/vim-scripts/fish.vim.git
-[submodule "vim/vim.symlink/bundle/javascript.vimndle/javascript.vim"]
-	path = vim/vim.symlink/bundle/javascript.vimndle/javascript.vim
+[submodule "vim/vim.symlink/bundle/javascript.vim"]
+	path = vim/vim.symlink/bundle/javascript.vim
 	url = git://github.com/pangloss/vim-javascript.git
 [submodule "vim/vim.symlink/bundle/slim.vim"]
 	path = vim/vim.symlink/bundle/slim.vim
