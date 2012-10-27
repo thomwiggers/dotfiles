@@ -71,10 +71,10 @@ minimum_size 280 70
 text_buffer_size 1024
 
 # Draw shades?
-draw_shades no
+draw_shades yes
 
 # Draw outlines?
-draw_outline no
+draw_outline yes
 
 # Draw borders around text
 #draw_borders yes
@@ -157,6 +157,8 @@ show_graph_range no
 TEXT
 ${alignc}${color}${font 15}TODO.TXT - ${execi 10 ~/.dotfiles/todo.txt/todo.txt-cli/todo.sh -d ~/.dotfiles/todo.txt/conky.cfg -p ls | head --lines=-2 | wc -l}
 ${execpi 10 ~/.dotfiles/todo.txt/color_todo.sh}
+
+
 
 
 
