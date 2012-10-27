@@ -7,7 +7,7 @@ export PROJECTS=~/git
 export DROPBOX=~/Dropbox
 
 #Cleanup because otherwise we're gonna load wrong shit
-rm $DotZSH/.vim/undo/*.autorun.zsh $Dot/.vim/undo/*completion.zsh
+rm $DotZSH/vim.symlink/undo/*.autorun.zsh $DotZSH/vim.symlink/undo/*completion.zsh 2> /dev/null
 
 
 # source every .autorun.zsh file in this rep

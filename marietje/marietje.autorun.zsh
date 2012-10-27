@@ -2,10 +2,10 @@
 
 LOC=$DotZSH/marietje/marietje
 
-pushd $LOC
+pushd $LOC > /dev/null
 
 . $DotZSH/marietje/marietje/marietje-environment.sh
 
-popd
+popd > /dev/null
 
 alias upload-to-marietje-noord="python $LOC/pymarietje/src/upload.py -H noordslet.science.ru.nl -u twiggers"
