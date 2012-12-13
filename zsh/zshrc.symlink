@@ -7,7 +7,7 @@ export PROJECTS=~/git
 export DROPBOX=~/Dropbox
 
 #Cleanup because otherwise we're gonna load wrong shit
-rm $DotZSH/vim.symlink/undo/*.autorun.zsh $DotZSH/vim.symlink/undo/*completion.zsh 2> /dev/null
+rm -f "$HOME/.vim/undo/*.autorun.zsh" "$HOME/.vim/undo/*completion.zsh"
 
 
 # source every .autorun.zsh file in this rep
@@ -53,8 +53,11 @@ export ZSH_THEME="gentoo"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse extract)
-plugins=(git rbenv ruby deb debian mvn screen)
+plugins=(git rbenv ruby deb debian mvn screen haskell)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+#
+
+export PATH=$HOME/.cabal/bin:$PATH
