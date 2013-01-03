@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-alias irc="$DotZSH/irssi-connect.sh"
+alias irc="$DotZSH/irssi/irssi-connect.sh"
