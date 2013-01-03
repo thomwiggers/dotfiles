@@ -6,7 +6,7 @@ export PROJECTS=~/git
 # dropbox folder that we can `d [tab]` to
 export DROPBOX=~/Dropbox
 
-rm -f $DotZSH/vim/vim.symlink/undo/*.autorun.zsh 
+rm -f "$HOME/.vim/undo/*.autorun.zsh" "$HOME/.vim/undo/*completion.zsh"
 
 # source every .autorun.zsh file in this rep
 for config_file ($DotZSH/**/*.autorun.zsh) source $config_file
