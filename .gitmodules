@@ -91,3 +91,6 @@
 [submodule "vim/vim.symlink/bundle/javascript.vim"]
 	path = vim/vim.symlink/bundle/javascript.vim
 	url = git://github.com/pangloss/vim-javascript.git
+[submodule "marietje/marietje"]
+	path = marietje/marietje
+	url = git://github.com/marietje/marietje.git

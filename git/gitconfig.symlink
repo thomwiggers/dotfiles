@@ -6,8 +6,7 @@
         protocol = https
 [user]
 	name = DD
-	email = thom@thomwiggers.nl
-	name = Thom
+	email = ret@rded.nl
 	signingkey = 52AE9CEE
 [alias]
         br = branch
@@ -51,7 +50,7 @@
 		attributesfile = ~/.gitattributes
         editor = vim
 		eol = lf
-		autocrlf = input
+	autocrlf = false
 [apply]
         whitespace = fix
 [merge]
