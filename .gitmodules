@@ -94,3 +94,6 @@
 [submodule "marietje/marietje"]
 	path = marietje/marietje
 	url = git://github.com/marietje/marietje.git
+[submodule "vim/vim.symlink/bundle/gitignore.vim"]
+	path = vim/vim.symlink/bundle/gitignore.vim
+	url = git@github.com:thomwiggers/gitignore.vim.git
