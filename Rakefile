@@ -48,6 +48,8 @@ task :install do
   puts "Please enter your email address (git config --global user.email):"
   email = gets
   `git config --global user.email "#{email.strip}"`
+  `curl http://defunkt.io/hub/standalone -sLo ~/.dotfiles/git/hub`
+  `chmod +x ~/.dotfiles/git/hub`
 end
 
 task :uninstall do

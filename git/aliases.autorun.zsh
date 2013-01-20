@@ -1,9 +1,13 @@
 # Use `hub` as our git wrapper:
 #   http://defunkt.github.com/hub/
-hub_path=$(which hub)
-if [[ -f $hub_path ]]
+hub_path=$DotZSH/git
+if [[ -f $hub_path/hub ]]
 then
-  alias git=$hub_path
+  alias git=$hub_path/hub
+
+  if type compdef >/dev/null; then
+    compdef hub=git
+  fi
 fi
 
 # The rest of my fun git aliases
