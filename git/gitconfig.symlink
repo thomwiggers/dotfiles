@@ -19,7 +19,7 @@
         pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
         smp = submodule -q foreach git pull -q origin master
         rb = rbranch
-        rc = rank-contributors
+        rc = rank-contributers
         rv = review
         sm = show-merges
         st = status   
