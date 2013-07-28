@@ -155,7 +155,7 @@ autocmd BufReadPost *
   
 " Emulate bundles, allow plugins to live independantly. Easier to manage.
 runtime bundle/pathogen.vim/autoload/pathogen.vim
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 filetype plugin indent on
 
 " Markdown
