@@ -10,12 +10,6 @@
 [submodule "vim/vim.symlink/bundle/racket.vim"]
 	path = vim/vim.symlink/bundle/racket.vim
 	url = git://github.com/wlangstroth/vim-racket.git
-[submodule "vim/vim.symlink/bundle/coffeescript.vim"]
-	path = vim/vim.symlink/bundle/coffeescript.vim
-	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/vim.symlink/bundle/ctrlp.vim"]
-	path = vim/vim.symlink/bundle/ctrlp.vim
-	url = git://github.com/kien/ctrlp.vim.git
 [submodule "vim/vim.symlink/bundle/jade.vim"]
 	path = vim/vim.symlink/bundle/jade.vim
 	url = git://github.com/vim-scripts/jade.vim.git
@@ -61,9 +55,6 @@
 [submodule "vim/vim.symlink/bundle/surround.vim"]
 	path = vim/vim.symlink/bundle/surround.vim
 	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/vim.symlink/bundle/ack.vim"]
-	path = vim/vim.symlink/bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
 [submodule "vim/vim.symlink/bundle/vim-colors-solarized.vim"]
 	path = vim/vim.symlink/bundle/vim-colors-solarized.vim
 	url = git://github.com/altercation/vim-colors-solarized.git
