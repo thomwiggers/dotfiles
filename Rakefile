@@ -50,6 +50,8 @@ task :install do
   `git config --global user.email "#{email.strip}"`
   `curl http://hub.github.com/standalone -sLo ~/.dotfiles/git/hub`
   `chmod +x ~/.dotfiles/git/hub`
+
+  `~/.dotfiles/xresources/gnome-terminal-colors-solarized`
 end
 
 task :uninstall do
