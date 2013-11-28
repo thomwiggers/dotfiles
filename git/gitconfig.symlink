@@ -54,7 +54,7 @@
 [apply]
         whitespace = fix
 [merge]
-		true
+
 [mergetool]
         keepBackup = false
 [rerere]

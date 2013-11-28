@@ -4,7 +4,7 @@
 dropboxURL="https://dl.dropbox.com/u/31172203/"
 dropboxDir="$HOME/Dropbox/Public/"
 
-cp -R $1 $dropboxDir
+cp -R "$1" "$dropboxDir"
 
 echo ${dropboxURL}`basename $1` | xclip -selection clipboard
 echo Uploaded `basename $1` to `xclip -selection clipboard -o`
