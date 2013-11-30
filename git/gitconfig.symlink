@@ -51,6 +51,7 @@
         editor = vim
 		eol = lf
 	autocrlf = false
+	whitespace = fix
 [apply]
         whitespace = fix
 [merge]
@@ -68,3 +69,9 @@
 	user = thomwiggers
 [push]
 	default = simple
+[url "git@github.com"]
+    pushInsteadOf = git://github.com
+[url "git@github.com/thomwiggers"]
+    pushInsteadOf = "https://github.com/thomwiggers"
+[url "git@github.com/thomwiggers/"]
+    pushInsteadOf = "git://github.com/thomwiggers/"
