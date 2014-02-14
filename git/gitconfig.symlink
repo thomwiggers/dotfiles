@@ -27,6 +27,7 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
         count   = !git shortlog -sn
+        tree = log --graph --decorate --pretty=oneline --abbrev-commit
 [color]
         diff = auto
         status = auto
@@ -51,6 +52,7 @@
         editor = vim
 		eol = lf
 	autocrlf = false
+	whitespace = fix
 [apply]
         whitespace = fix
 [merge]
@@ -68,3 +70,9 @@
 	user = thomwiggers
 [push]
 	default = simple
+[url "git@github.com"]
+    pushInsteadOf = git://github.com
+[url "git@github.com/thomwiggers"]
+    pushInsteadOf = "https://github.com/thomwiggers"
+[url "git@github.com/thomwiggers/"]
+    pushInsteadOf = "git://github.com/thomwiggers/"

@@ -61,7 +61,7 @@ export ZSH_THEME="agnoster"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse extract)
-plugins=(git command-not-found rvm ruby deb debian mvn screen rails haskell)
+plugins=(git command-not-found deb debian screen rails haskell python virtualenv mosh pip virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 

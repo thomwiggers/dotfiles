@@ -11,3 +11,5 @@ fi
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+alias irc="ssh weechat@aws.rded.nl -t tmux attach"
