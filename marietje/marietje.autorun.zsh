@@ -9,4 +9,4 @@ pushd $LOC > /dev/null
 popd > /dev/null
 
 alias upload-to-marietje-noord="python $LOC/pymarietje/src/upload.py -H noordslet.science.ru.nl -u twiggers"
-alias marietje="$LOC/bin/pymarietje -H noordslet" 
+alias marietje="$LOC/bin/pymarietje -H noordslet.science.ru.nl"
