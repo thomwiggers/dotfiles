@@ -16,9 +16,6 @@
 [submodule "vim/vim.symlink/bundle/ruby.vim"]
 	path = vim/vim.symlink/bundle/ruby.vim
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "vim/vim.symlink/bundle/handlebars.vim"]
-	path = vim/vim.symlink/bundle/handlebars.vim
-	url = git://github.com/nono/vim-handlebars.git
 [submodule "vim/vim.symlink/bundle/nerdcommenter.vim"]
 	path = vim/vim.symlink/bundle/nerdcommenter.vim
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -28,9 +25,6 @@
 [submodule "vim/vim.symlink/bundle/repeat.vim"]
 	path = vim/vim.symlink/bundle/repeat.vim
 	url = git://github.com/tpope/vim-repeat.git
-[submodule "vim/vim.symlink/bundle/snipmate.vim"]
-	path = vim/vim.symlink/bundle/snipmate.vim
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule "vim/vim.symlink/bundle/surround.vim"]
 	path = vim/vim.symlink/bundle/surround.vim
 	url = git://github.com/tpope/vim-surround.git
