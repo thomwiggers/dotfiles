@@ -51,7 +51,7 @@ task :install do
   `curl http://hub.github.com/standalone -sLo ~/.dotfiles/git/hub`
   `chmod +x ~/.dotfiles/git/hub`
 
-  `~/.dotfiles/xresources/gnome-terminal-colors-solarized`
+  `zsh ~/.dotfiles/xresources/gnome-terminal-colors-solarized/install.sh`
 end
 
 task :uninstall do
