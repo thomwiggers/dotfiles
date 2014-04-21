@@ -154,7 +154,7 @@ autocmd BufReadPost *
   
 " Emulate bundles, allow plugins to live independantly. Easier to manage.
 runtime bundle/pathogen.vim/autoload/pathogen.vim
-call pathogen#incubate()
+call pathogen#infect('bundle/{}')
 filetype plugin indent on
 
 " Markdown
@@ -190,7 +190,7 @@ let g:ctrlp_split_window = 1 " <CR> = New Tab
 " Rainbow Parenthesis
 nnoremap <leader>rp :RainbowParenthesesToggle<CR>
 
-"
+" 
 " Powerline
 "
 python3 from powerline.vim import setup as powerline_setup
@@ -285,7 +285,7 @@ nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 " ------------------------------------
 "  Rainbow Parentheses
 " ------------------------------------
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+"au VimEnter * RainbowParenthesesToggle
+"au Syntax * RainbowParenthesesLoadRound
+"au Syntax * RainbowParenthesesLoadSquare
+"au Syntax * RainbowParenthesesLoadBraces
