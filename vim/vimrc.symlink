@@ -108,10 +108,6 @@ set wildignore+=*/smarty/*,*/vendor/*,*/node_modules/*,*/.git/*,*/.hg/*,*/.svn/*
 " Sudo write (,W)
 noremap <leader>W :w !sudo tee %<CR>
 
-"Airline
-let g:airline_powerline_fonts            = 1
-let g:airline#extensions#tabline#enabled = 1
-
 " Remap :W to :w
 command W w
 
@@ -191,13 +187,15 @@ let g:ctrlp_mru_files = 1 " Enable Most Recently Used files feature
 let g:ctrlp_jump_to_buffer = 2 " Jump to tab AND buffer if already open
 let g:ctrlp_split_window = 1 " <CR> = New Tab
 
-" Clojure.vim
-let g:vimclojure#ParenRainbow = 1 " Enable rainbow parens
-let g:vimclojure#DynamicHighlighting = 1 " Dynamic highlighting
-let g:vimclojure#FuzzyIndent = 1 " Names beginning in 'def' or 'with' to be indented as if they were included in the 'lispwords' option
-
 " Rainbow Parenthesis
 nnoremap <leader>rp :RainbowParenthesesToggle<CR>
+
+"
+" Powerline
+"
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 
 " LaTeX
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
@@ -259,8 +257,9 @@ set undodir=~/.vim/undo
 " Solarized
 " --------------------------------------
 syntax enable
-colorscheme solarized
 set background=dark
+call togglebg#map("<F5>")
+colorscheme solarized
 
 " -----------------------------------
 "  Vim Latex 

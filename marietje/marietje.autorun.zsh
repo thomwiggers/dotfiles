@@ -4,7 +4,7 @@ LOC=$DotZSH/marietje/marietje
 
 pushd $LOC > /dev/null
 
-. $DotZSH/marietje/marietje/marietje-environment.sh
+#. $DotZSH/marietje/marietje/marietje-environment.sh
 
 popd > /dev/null
 
