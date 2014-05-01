@@ -67,3 +67,6 @@
 [submodule "xresources/dircolors-solarized"]
 	path = xresources/dircolors-solarized
 	url = git://github.com/huyz/dircolors-solarized.git
+[submodule "vim/vim.symlink/bundle/easymotion.vim"]
+	path = vim/vim.symlink/bundle/easymotion.vim
+	url = https://github.com/Lokaltog/vim-easymotion
