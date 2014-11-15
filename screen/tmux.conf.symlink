@@ -1,9 +1,7 @@
-unbind C-b
-set -g prefix C-a
 
 set -g status-utf8 on
 
-bind-key C-a last-window
+bind-key C-b last-window
 
 
 # window title string (uses statusbar variables)

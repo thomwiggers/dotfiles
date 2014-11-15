@@ -12,7 +12,9 @@ export EDITOR=vim
 # Gnome terminal sucks
 if [[ "$COLORTERM" == "gnome-terminal" ]]; then
   export TERM=xterm-256color
+  echo "HI"
 fi
+export TERM=xterm-256color
 
 #Cleanup because otherwise we're gonna load wrong shit
 rm -f $HOME/.vim/undo/*autorun.zsh(N) 2> /dev/null 
@@ -30,6 +32,7 @@ fi
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
+zmodload zsh/zpython
 compinit
 
 # load every completion after autocomplete loads
@@ -62,12 +65,23 @@ DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse extract)
-plugins=(git rails haskell python mosh pip virtualenv)
+plugins=(git rails haskell python mosh pip virtualenv gem django)
 
 source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.local/bin:$PATH"
-source "$HOME/.local/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh"
+powerline-daemon -q
+. /usr/share/zsh/site-contrib/powerline.zsh
+
+export WORKON_HOME="~/pythonenvs"
+source /usr/bin/virtualenvwrapper_lazy.sh
+
 
 # Customize to your needs...
 #
 
+export MPD_HOST=griffin
+alias agenda="khal agenda --days=14"
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+vdirsyncer sync 2> /dev/null > /dev/null & disown 2> /dev/null
+khal agenda --days 4

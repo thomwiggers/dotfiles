@@ -11,17 +11,18 @@ filetype off
 " ----------------------------------------------------------------------------
 
 set autoindent             " automatic indent new lines
+set autowrite              " autosave on :make
 set smartindent            " be smart about it
 inoremap # X<BS>#
 set nowrap                 " do not wrap lines
 set softtabstop=2          " yep, two
-set shiftwidth=2           " ..
+set shiftwidth=4           " ..
 set tabstop=4
 set expandtab              " expand tabs to spaces
 set smarttab               " At start of line, <Tab> inserts shiftwidth spaces,
                            " <Bs> deletes shiftwidth spaces.
 set formatoptions+=n       " support for numbered/bullet lists
-"set textwidth=80          " wrap at 80 chars by default
+set textwidth=80          " wrap at 80 chars by default
 set virtualedit=block      " allow virtual edit in visual block ..
 
 " ----------------------------------------------------------------------------
@@ -190,13 +191,6 @@ let g:ctrlp_split_window = 1 " <CR> = New Tab
 " Rainbow Parenthesis
 nnoremap <leader>rp :RainbowParenthesesToggle<CR>
 
-" 
-" Powerline
-"
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-
 " LaTeX
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 " filetype plugin on " done elsewhere
@@ -219,6 +213,7 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_MultipleCompileFormats = 'pdf,dvi'
 let g:Tex_DefaultTargetFormat    = 'pdf' 
+let g:Tex_Diacritics = 1
 
 " spellang
 set spelllang=en_gb
@@ -292,3 +287,12 @@ nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 
 " Easymotion
 let g:EasyMotion_smartcase = 1
+
+
+" -----------------------------------
+"  Python Mode
+" ----------------------------------
+let g:pymode_rope_lookup_project  = 1
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'pep527']
+let g:pymode_lint_cwindow = 1
