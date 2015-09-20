@@ -14,7 +14,6 @@
         co = checkout
         df = diff
         g = grep -I
-        lg = log -p
         pb = publish-branch
         pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
         smp = submodule -q foreach git pull -q origin master
@@ -27,7 +26,7 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
         count   = !git shortlog -sn
-        tree = log --graph --decorate --pretty=oneline --abbrev-commit
+        tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [color]
         diff = auto
         status = auto
@@ -78,3 +77,9 @@
     pushInsteadOf = "git://github.com/thomwiggers/"
 [merge]
 	tool = meld
+[commit]
+	gpgsign = on
+[gitlab]
+	url = http://git.rded.nl
+[credential]
+	helper = /usr/lib/git-core/git-credential-gnome-keyring
